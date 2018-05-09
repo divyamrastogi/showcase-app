@@ -18,7 +18,7 @@ function CustomButton(props) {
       onClick={onClick}
       className={`button ${type} ${className}`}  
     >
-        { props.children ? props.children : 'Button' }
+        { children ? children : 'Button' }
     </Button>
   )
 }
