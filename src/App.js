@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from 'material-ui/Button';
+import Button from './components/Button';
 import Dialog, {
   DialogTitle,
   DialogContent,
@@ -47,7 +47,7 @@ class App extends React.Component {
             <DialogContentText>Hello World</DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button color="primary" onClick={this.handleClose}>
+            <Button type="flat" onClick={this.handleClose}>
               OK
             </Button>
           </DialogActions>
@@ -58,8 +58,11 @@ class App extends React.Component {
         <Typography variant="subheading" gutterBottom>
           Showcase App
         </Typography>
-        <Button variant="raised" color="secondary" onClick={this.handleClick}>
-          Test Popup
+        <Button type="primary" onClick={this.handleClick}>
+          Primary
+        </Button>
+        <Button type="secondary" onClick={this.handleClick}>
+          Secondary
         </Button>
       </div>
     );
