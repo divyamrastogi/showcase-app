@@ -4,10 +4,10 @@ import './Button.css';
 
 function CustomButton(props) {
   const {
-    type = 'primary',
+    type = 'secondary',
     onClick,
     className = '',
-    variant = 'flat',
+    variant = 'raised',
     children,
   } = props;
 
@@ -16,9 +16,9 @@ function CustomButton(props) {
       color={type}
       variant={variant}
       onClick={onClick}
-      className={`button ${type} ${className}`}  
+      className={`button ${type} ${className}`}
     >
-        { children ? children : 'Button' }
+      {children ? children : 'Button'}
     </Button>
   )
 }
