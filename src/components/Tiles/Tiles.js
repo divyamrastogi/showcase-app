@@ -4,6 +4,7 @@ import './Tiles.css';
 const Tile = (props) => {
   const { backgroundColor } = props;
   const tileStyles = {
+    color: backgroundColor,
     backgroundColor,
   }
   return(

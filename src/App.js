@@ -41,6 +41,7 @@ class App extends React.Component {
 
     return (
       <div className={classes.root}>
+        <Tile backgroundColor="magenta">Hello World</Tile>
         <Dialog open={open} onClose={this.handleClose}>
           <DialogTitle>Test Popup</DialogTitle>
           <DialogContent>
