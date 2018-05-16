@@ -14,7 +14,7 @@ export class DetailCard extends Component {
   render() {
     return (
       <div>
-          <Card className="detail-card">
+        <Card className="detail-card">
           {this.props.children}
           {this.props.detail && <div className="more-info" > <a className="more-info-link" onClick={this.props.onClick}> {this.props.detailText} </a> </div>}
         </Card>
